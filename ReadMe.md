@@ -13,6 +13,7 @@ This is a web-based music player that allows users to play, pause, skip, shuffle
 - **Seekbar**: Move to any position in the track.
 - **Track Information**: Display the current track name, artist, and cover image.
 - **Replay**: Restart the current track from the beginning.
+- **Responsive Design**: Optimized for devices of different screen sizes.
 
 ## Icons
 Icons used in this project are from Font Awesome and Huge Icons.
