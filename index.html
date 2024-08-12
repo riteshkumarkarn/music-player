@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="svg/icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="playerBox">
+
+      <div class="details">
+        <div class="tracker"><h3>Playing song x of y</h3></div>
+        <div class="cover"></div>
+        <div class="songName"><h1>Song Name</h1></div>
+        <div class="artistName">Artist</div>
+      </div>
+
+      <div class="controls">
+        <div class="time">
+          <div class="currentTime">00:00</div>
+          <div class="totalDuration"></div>
+        </div>
+
+        <div class="trackSlider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="seekSlider"
+            onchange="seekTo()"
+          />
+        </div>
+
+        <div class="volumeControl">
+          <img src="svg/volumeLow.svg" alt="Volume Low" class="volumeLow" />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="volumeSlider"
+            onchange="setVolume()" />
+          
+          <img src="svg/volumeHigh.svg" alt="Volume High" class="volumeHigh"/>
+        </div>
+
+        <div class="btns">
+
+            <img src="svg/shuffle.svg" alt="Shuffle" class="shuffle"
+            onclick="shuffleSong()"/>
+  
+            <img src="svg/previous.svg" alt="Previous" class="previous"
+            onclick="previousSong()"
+            />
+  
+            <img src="svg/play.svg" alt="Play and Pause" class="playPauseBtn"
+            onclick="playPauseSong()"
+            />
+  
+            <img src="svg/next.svg" alt="Next" class="next"
+            onclick="nextSong()"
+            />
+  
+            <img src="svg/reload.svg" alt="Replay" class="replay"
+            onclick="replaySong()"/>
+  
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

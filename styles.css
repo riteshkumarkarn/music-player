@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:wght@700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    BACKGROUND-COLOR: lightskyblue;
+}
+
+.playerBox {
+    width: 65vw;
+    height: 80vh;
+    margin: 10vh auto;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.details {
+    height: 65%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tracker {
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+.cover {
+    border: 2px solid #fffafa;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px black;
+    -webkit-box-shadow: 0px 6px 5px black;
+    box-shadow: 0px 6px 5px black;
+    -moz-border-radius:190px;
+    -webkit-border-radius:190px;
+    background-size: cover;
+}
+
+.songName {
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trackSlider {
+    width: 100%;
+}
+
+.trackSlider input {
+    width: 100%;
+}
+
+.volumeControl {
+    display: flex;
+    gap: 8px;
+    padding-top: 1em;
+}
+
+.volumeLow {
+    width: 0.65em;
+}
+
+.volumeHigh {
+    width: 1em;
+}
+
+input { 
+    cursor: pointer;
+}
+
+
+.seekSlider::-webkit-slider-thumb,
+.volumeSlider::-webkit-slider-thumb {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: white;
+border: 3px solid #3774FF;
+cursor: grab;
+border-radius: 100%;
+}
+
+.btns {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5em;
+    padding-bottom: 0.75em;
+    filter: invert(1);
+}
+
+.btns img {
+    width: 2em;
+    cursor: pointer;
+}
+
+.shuffleOn { 
+    filter: invert(1);
+}
+
+.previous:active, .playPauseBtn:active, .next:active, .replay:active {
+    filter: invert(1);
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@media (max-width: 1050px) {
+    .cover {
+        width: 32vw;
+        height: 32vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .playerBox {
+        width: 85vw;
+    }
+
+    .btns {
+        width: 100%;
+    }
+}
