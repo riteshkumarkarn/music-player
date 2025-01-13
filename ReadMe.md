@@ -33,7 +33,7 @@ To run this music player locally, clone the repository and open the `index.html`
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/music-player.git
+    git clone https://github.com/riteshkrkarn/music-player.git
     ```
 
 2. **Navigate to the Project Directory**:
